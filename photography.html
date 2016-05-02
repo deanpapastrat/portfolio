@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width;initial-scale=1;" />
+  <title>Zoe Kafkes Photography</title>
+  <link href="css/style.css" rel="stylesheet" media="screen"/>
+  <link href="css/mobile.css" rel="stylesheet" media="screen" />
+  <link rel="stylesheet" type="text/css" media="all" href="jgallery/dist/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="jgallery/dist/css/jgallery.min.css?v=1.5.5" />
+    <link rel="stylesheet" type="text/css" media="all" href="jgallery/dist/css/jgallery.css" />
+  <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="js/jgallery.min.js?v=1.5.5"></script>
+  <script type="text/javascript" src="js/touchswipe.min.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+  <header>
+    <h1>Zoe Kafkes Photography</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html"><img src="img/logo-04.png" alt="Zoe Kafkes Logo"></a></li>
+      <li><a href="about-me.html">about me</a></li>
+      <li><a href="design.html">design</a></li>
+      <li><a href="photography.html">photography</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </nav>
+
+<main>
+  <h1>photography</h1>
+  <p>
+    I have experience with documentary photography, creative photography and freelance work.  My projects range from making statements about our society to graduation shoots and professional portraiture. To hire me for a shoot, <a href="contact.html">drop me a line</a>.
+  </p>
+
+<div id="gallery">
+    <a href="jgallery/dist/images/large/1.jpg"><img src="jgallery/dist/images/thumbs/1.jpg" alt="Photo 1" /></a>
+    <a href="jgallery/dist/images/large/2.jpg"><img src="jgallery/dist/images/thumbs/2.jpg" alt="Photo 2" /></a>
+    <a href="jgallery/dist/images/large/3.jpg"><img src="jgallery/dist/images/thumbs/3.jpg" alt="Photo 3" /></a>
+</div>
+
+<script type="text/javascript">
+$( function(){
+    $( "#gallery" ).jGallery( {
+        "backgroundColor":"white",
+        "height":"375px",
+        "maxMobileWidth":"300",
+        "mode":"standard",
+        "textColor":"FFFFFF",
+        "thumbnails":"true",
+        "thumbnailsPosition":"right",
+        "thumbType":"image",
+        "transition":"moveToLeft_moveFromRight",
+        "transitionBackward":"moveToRight_moveFromLeft",
+        "transitionCols":"1",
+        "transitionRows":"1",
+        "width":"100%",
+     } );
+     $( '#gallery' ).jGallery( {
+       canMinimalizeThumbnails: false
+   } );
+   $( '#gallery' ).jGallery( {
+       slideshow: false
+   } );
+} );
+</script>
+</main>
+</div>
+</body>
+</html>

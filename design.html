@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width;initial-scale=1;" />
+  <title>Zoe Kafkes Design</title>
+  <link href="css/style.css" rel="stylesheet" media="screen"/>
+  <link href="css/mobile.css" rel="stylesheet" media="screen" />
+  <link rel="stylesheet" type="text/css" media="all" href="jgallery/dist/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="jgallery/dist/css/jgallery.min.css?v=1.5.5" />
+    <link rel="stylesheet" type="text/css" media="all" href="jgallery/dist/css/jgallery.css" />
+  <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="js/jgallery.min.js?v=1.5.5"></script>
+  <script type="text/javascript" src="js/touchswipe.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Zoe Kafkes Design</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html"><img src="img/logo-04.png" alt="Zoe Kafkes Logo"></a></li>
+      <li><a href="about-me.html">about me</a></li>
+      <li><a href="design.html">design</a></li>
+      <li><a href="photography.html">photography</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </nav>
+
+<main>
+  <h1>design</h1>
+  <p>
+    I started college thinking graphic design was scary. Four years later and it is one of my favorite things to do. Between various classes, my job working at University of Miami's Housing and Residential Life (and a lot of people crying for help in the meantime), I have built a strong skill set as a designer. To hire me for design work, <a href="contact.html">feel free to send a note</a>.
+  </p>
+
+<div id="gallery">
+    <a href="jgallery/dist/images/large/1.jpg"><img src="jgallery/dist/images/thumbs/1.jpg" alt="Photo 1" /></a>
+    <a href="jgallery/dist/images/large/2.jpg"><img src="jgallery/dist/images/thumbs/2.jpg" alt="Photo 2" /></a>
+    <a href="jgallery/dist/images/large/3.jpg"><img src="jgallery/dist/images/thumbs/3.jpg" alt="Photo 3" /></a>
+</div>
+
+<script type="text/javascript">
+$( function(){
+    $( "#gallery" ).jGallery( {
+        "backgroundColor":"white",
+        "height":"375px",
+        "maxMobileWidth":"340",
+        "mode":"standard",
+        "textColor":"FFFFFF",
+        "thumbnails":"true",
+        "thumbnailsPosition":"right",
+        "thumbType":"image",
+        "transition":"moveToLeft_moveFromRight",
+        "transitionBackward":"moveToRight_moveFromLeft",
+        "transitionCols":"1",
+        "transitionRows":"1",
+        "width":"100%",
+     } );
+     $( '#gallery' ).jGallery( {
+       canMinimalizeThumbnails: false
+   } );
+   $( '#gallery' ).jGallery( {
+       slideshow: false
+   } );
+} );
+</script>
+</main>
+</body>
+</html>
