@@ -74,3 +74,82 @@ p img {
 .clear {
   clear: both;
 }
+
+.mobile-logo, .mobile-nav-toggle {
+  display: none;
+}
+
+/* Mobile Styles */
+
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  header {
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    height: 45px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 2;
+  }
+
+  main {
+    margin: 80px auto;
+    max-width: 80vw;
+  }
+
+  nav {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    background: #fff;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    text-align: center;
+    top: 45px;
+    -webkit-transition: height 0.5s ease;
+    transition: height 0.5s ease;
+    width: 100vw;
+    z-index: 1;
+  }
+
+  nav.expanded {
+    height: calc(100vh - 45px);
+    overflow: scroll;
+  }
+
+  nav ul {
+    margin: 25px auto;
+    padding: 0;
+  }
+
+  nav li {
+    display: block;
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  nav li a {
+    padding: 0;
+  }
+
+  .mobile-logo {
+    display: block;
+    margin: 7.5px auto;
+    width: 60px;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 12.5px;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+}
